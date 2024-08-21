@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --light-blue:#E9ECF8;
+    --dark-blue:#052051;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+}
+
+.nav__logo{
+    display: flex;
+    padding: 1rem;
+}
+
+.nav__title{
+    align-self: center;
+}
+
+.content{
+    display: flex;
+    height: 100vh;
+    background-color: var(--light-blue);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__textbox{
+    width: 100%;
+    height: 85%;
+    margin: 0 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+textarea{
+    box-sizing: border-box;
+    border:none;
+    resize: none;    
+    width: 100%;
+    height: 250px;
+    outline: none;
+    background-color: transparent;
+    color: var(--dark-blue);
+    font-size: 2rem;
+}
+
+.message__icon{
+    width:1rem;
+}
+
+.textbox__message{
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+}
+.textbox__buttons{
+    height: 100px;
+}
+
+.textbox__area{
+    margin-top: 70px;
+}
+
+.buttons{
+    display: flex;
+    padding: 1rem;
+    gap:10px;
+}
+
+.button__action{
+    height: 67px;
+    border: 1px black solid;
+    background-color: white;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.button__action:hover{
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.content__result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: fit-content;
+    height: 85%;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 40px;
+}
+
+.result__text{
+    word-break: break-all;
+}
+
+#resultado{
+    width: 400px;
+}

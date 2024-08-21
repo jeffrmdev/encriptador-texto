@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <div class="nav__logo">
+                <img src="./img/logo.png" alt="Logo encriptador">
+                <h1 class="nav__title">Encriptador</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <!-- Ingreso del texto-->
+            <div class="content__textbox">
+                <div class="textbox__area">
+                    <textarea name="text-usuario" id="text-usuario" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                
+                <div class="textbox__buttons">
+                    <div class="textbox__message">
+                        <p>No se aceptan mayúsculas ni carácteres especiales</p>
+                    </div>
+                    <div class="buttons">
+                        <input class="button__action button__action--blue" type="button" id="encriptar" value="Encriptar">
+                        <input class="button__action button__action--white" type="button" id="desencriptar" value="Desencriptar">
+                    </div>
+                </div>
+            </div>
+            <!-- Texto encriptado-->
+             <div class="content__result">
+                <div class="result__text">
+                    <p class="text__result" id="resultado"></p>
+                </div>
+                <div class="result__button">
+                    <input class="button__action button__action--white" type="button" value="Copiar" onclick="copiarTexto();">
+                </div>
+             </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+<script src="./js/index.js"></script>
+</html>
