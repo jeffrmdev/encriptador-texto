@@ -4,6 +4,11 @@
 La aplicación encriptador de texto es una herramienta sencilla desarrollada con tecnologías web como HTML, JavaScript y CSS. 
 Diseñada para ser intuitiva y accesible desde cualquier dispositivo con un navegador, esta aplicación permite a los usuarios encriptar y desencriptar texto de manera rápida y segura, para compartir mensajes con sus amigos.
 
+#### ✔️ Tecnologías Utilizadas
+- HTML
+- CSS
+- JS
+
 ### Características Principales:
 - **Interfaz Simple y Atractiva**: La interfaz de usuario, diseñada con CSS, es limpia y fácil de usar, facilitando la navegación y la comprensión del proceso de encriptación.
 
