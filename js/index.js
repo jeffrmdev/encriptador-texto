@@ -1,9 +1,14 @@
 const btn_encriptar = document.getElementById("encriptar");
 const btn_desencriptar = document.getElementById("desencriptar");
 const mostrar = document.getElementById("resultado");
+const btn_copiar = document.getElementById("btnCopiar");
+const mensaje_inicial = document.getElementById("result__message");
+btn_copiar.style.display = "none";
+
 let textoUsuario = document.getElementById("text-usuario");
 let textoEncriptado = "";
 let textoDesencriptado = "";
+
 
 btn_encriptar.addEventListener("click", function(){
     encriptarTexto(textoUsuario.value);
@@ -81,9 +86,26 @@ function desencriptarTexto(texto){
 }
 
 function mostrarTexto(texto){
+    if(texto.length == 0){
+
+        mensaje_inicial.style.display = "flex";
+        btn_copiar.style.display = "none";
+        mostrar.style.display = "none";
+        mostrar.style.padding = "0px";
+        return;
+    } else {
+        mensaje_inicial.style.display = "none";
+    }
+    mostrar.style.display = "block";
+    mostrar.style.padding = "10px";
     mostrar.innerHTML = texto;
+    btn_copiar.style.display = "block";
 }
 
 function copiarTexto(){
     navigator.clipboard.writeText(mostrar.outerText)
+}
+
+textoUsuario.oninput = function(){
+    mostrarTexto(textoUsuario.value);
 }
